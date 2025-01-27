@@ -1,6 +1,6 @@
 @media (max-width: 950px) { 
     main {
-        height: 1500px;
+        height: 1500px !important;
     }
     
     .content {
