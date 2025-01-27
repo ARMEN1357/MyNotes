@@ -29,6 +29,6 @@ function logout() {
 document.addEventListener("DOMContentLoaded", function () {
 
     if (!name_from_localstorage) {
-        window.location.href = '/login.html';
+        window.location.href = 'MyNotes/login.html';
     }
 });
