@@ -1,0 +1,54 @@
+@media (max-width: 950px) { 
+    main {
+        height: 1000px;
+    }
+    
+    .content {
+        border: none;
+        display: block;
+        width: 500px;
+        height: 900px;
+    }
+
+    .management {
+        border: none;
+    }
+
+    .search {
+        border-bottom: none;
+        border-top: 2px solid black;
+    }
+
+    .spisok {
+        border: 2px solid black;
+    }
+}
+
+@media (max-width: 470px) {
+    body {
+        width: 500px;
+    }
+
+    .management {
+        width: 400px;
+        gap: 70px;
+    }
+    
+    .content {
+        width: 400px;
+        height: 900px;
+    }
+
+    .notes_spisok_and_search {
+        width: 400px;
+    }
+
+    .spisok .note {
+        height: 100px;
+        width: 350px;
+    }
+
+    .search input {
+        width: 350px;
+    }
+}

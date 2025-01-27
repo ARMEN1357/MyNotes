@@ -1,0 +1,14 @@
+img {
+    display:block;
+    margin:auto;
+    height: 300px;
+    width: 340px;
+}
+
+.texts_404 {
+    text-align: center;
+}
+
+.texts_404 h1 {
+    font-size: 25px;
+}

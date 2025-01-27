@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media_index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>MyNotes</h1>
+        <nav>
+            <a href="index.html">Приложение</a>
+            <a href="profile.html">Мой профиль</a>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="management">
+                <a href="#" id="button_open_1" onclick="modal_0_Func1()">Создать заметку</a>
+                <a href="#" id="button_open_1" onclick="modal_1_Func1()">Редактировать заметку</a>
+                <a href="#" id="button_open_3" onclick="modal_3_Func1()">Удалить заметку</a>
+                <a href="#" id="button_open_2" onclick="modal_2_Func1()">Добавить заметку в файл</a>
+            </div>
+            <div class="notes_spisok_and_search">
+                <div class="search">
+                    <input type="text" placeholder="  Поиск заметок" id="search_input">
+                    <a href="#" id="search_button" onclick="search_note()"><img src="image/Поиск значок-Photoroom.png" alt="поиск"></a>
+                </div>
+                <div class="spisok" id="spisok"></div>
+            </div>
+            <div class="modal" id="modal1">
+                <div id="modal_window">
+                    <a href="#" id="button_close" onclick="Func2()">Х</a>
+                    <p><input type="number" id="id_note_save" placeholder="id заметки..."></p>
+                    <a href="#" onclick="search_notes_for_save()">Поиск заметки по id</a>
+                    <h2 contenteditable="true" id="h2_save">Заголовок</h2>
+                    <p contenteditable="true" id="p_save">текст</p>
+                    <a href="#" onclick="save_note()">Сохранить заметку</a>
+                </div>
+            </div>
+            <div class="modal" id="modal2">
+                <div id="modal_window">
+                    <a href="#" id="button_close" onclick="Func2()">Х</a>
+                    <input type="text" style="margin: 10px;" placeholder="введите id заметки...">
+                    <p style="margin: 20px 0px;"><a href="#" onclick="addnoteinfile()">выберите файл</a></p>
+                    <p style="margin: 20px 0px;"><a href="#" onclick="addnoteinfile()">добавить в файл</a></p>
+                </div>
+            </div>
+            <div class="modal" id="modal3">
+                <div id="modal_window">
+                    <a href="#" id="button_close" onclick="Func2()">Х</a>
+                    <p><input type="text" id="h1_note" placeholder="заголовок..."></p>
+                    <p><input type="text" id="p_note" placeholder="содержание..."></p>
+                    <a href="#" onclick="great_note()">Сохранить заметку</a>
+                </div>
+            </div>
+            <div class="modal" id="modal4">
+                <div id="modal_window">
+                    <a href="#" id="button_close" onclick="Func2()">Х</a>
+                    <p><input type="number" id="id_note" placeholder="id заметки..."></p>
+                    <a href="#" onclick="del_note()">Удалить заметку</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="">Исходный код проекта</a>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

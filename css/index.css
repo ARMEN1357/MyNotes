@@ -1,0 +1,163 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 900px;
+    height: 500px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+}
+
+.management {
+    border-right: 2px solid black;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 410px;
+    gap: 75px 0px;
+}
+
+.management a {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #56C456;
+    border-radius: 10px;
+}
+
+.notes_spisok_and_search {
+    padding: 0px 10px;
+    width: 450px;
+    height: 450px;
+}
+
+.search {
+    border-bottom: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 60px;
+}
+
+.search input {
+    border: none;
+    height: 40px;
+    width: 300px;
+    background-color: #D9D9D9;
+}
+
+.search a {
+    background-color: #56C456;
+    height: 40px;
+    border-left: 2px solid black;
+}
+
+.search a img {
+    height: 40px;
+    width: 47px;
+}
+
+.spisok {
+    height: 387px;
+    overflow: auto;
+}
+
+.spisok .note {
+    position: relative;
+    margin: 10px auto;
+    background-color: #D9D9D9;
+    height: 140px;
+    width: 400px;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto; 
+}
+
+.spisok .note h2{
+    margin: 10px 0px;
+}
+
+.spisok .note p {
+    margin: 10px 0px 30px 0px;
+}
+
+.spisok .note a {
+    text-decoration: none;
+    color: white;
+    background-color: #56C456;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    padding-top: 210px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;  
+    background-color: rgba(255, 255, 255, 0.39);
+    animation: animate 0.5s; 
+}
+
+#modal_window {
+    animation: animate 0.5s; 
+    border: 3px solid #56C456;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    background-color: white;
+    overflow: auto; 
+}
+
+.modal #modal_window #button_close {
+    float: right;
+    padding: 10px;
+    background-color: #56C456;
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+}
+
+#modal_window h2, p {
+    margin: 10px;
+}
+
+#modal_window  a {
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #56C456;
+    color: white;
+}
+
+#modal_window input {
+    padding: 5px 10px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    border: none;
+}
+
+#modal_window #h1_note, #p_note {
+    margin: 10px 0px;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Hammersmith One", sans-serif;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #56C456;
+}
+
+header h1 {
+    color: white;
+}
+
+header nav a {
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    height: 622px;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #56C456;
+}
+
+footer a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
