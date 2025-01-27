@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         } else {
             localStorage.setItem("name_user", inputValue);
-            window.location.href = "MyNotes/profile.html";
+            window.location.href = "profile.html";
         }
     })
 
