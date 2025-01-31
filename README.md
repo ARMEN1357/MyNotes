@@ -1,6 +1,6 @@
 # MyNotes
 Веб-приложение для создания и управления личными заметками. 
-Использованы технологии: HTML, CSS, JavaScript, Flask, Python. Данные хранятся в Local Storage.
+Использованы технологии: HTML, CSS, JavaScript. Данные хранятся в Local Storage.
 
 ## Функционал:
 
