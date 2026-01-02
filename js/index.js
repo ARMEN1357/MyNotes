@@ -32,7 +32,7 @@ let name_from_localstorage = localStorage.getItem("name_user");
 document.addEventListener("DOMContentLoaded", function () {
 
     if (!name_from_localstorage) {
-        window.location.href = 'login.html';
+        window.location.href = '/login.html';
     }
 });
 
@@ -52,8 +52,8 @@ function great_note(){
         let div_note = document.createElement("div");
         div_note.className = "note";
 
-        h2_note.innerHTML = input_h2
-        p_note.innerHTML = input_p
+        h2_note.textContent = input_h2
+        p_note.textContent = input_p
 
         div_note.appendChild(h2_note)
         div_note.appendChild(p_note)
@@ -80,7 +80,7 @@ function getAllNotes() {
 
 window.onload = function() {
     let spisok_notes = document.getElementById("spisok");
-    spisok_notes.innerHTML = "";
+    spisok_notes.textContent = "";
 
     notes.forEach(note => {
         let h2_note = document.createElement("h2");
@@ -124,8 +124,8 @@ function search_notes_for_save(){
     let p_save = document.getElementById("p_save");
     let id_note_save = parseInt(document.getElementById("id_note_save").value);
 
-    h2_save.innerHTML = notes[id_note_save].title;
-    p_save.innerHTML = notes[id_note_save].content;
+    h2_save.textContent = notes[id_note_save].title;
+    p_save.textContent = notes[id_note_save].content;
 }
 
 function save_note(){
